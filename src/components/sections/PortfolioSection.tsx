@@ -25,18 +25,22 @@ export function PortfolioSection() {
                   <div className="portfolio-overlay-content">
                     <h3>{t(`portfolio-${item.key}`)}</h3>
                     <p>{t(`portfolio-${item.key}-desc`)}</p>
-                    <div className="portfolio-link" onClick={(e) => {
-                      if (item.hasDetails) {
-                        e.stopPropagation();
-                        setSelectedItem(item.key);
-                      }
-                    }} style={{ cursor: item.hasDetails ? 'pointer' : 'default' }}>
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '1rem' }}>
                       {item.hasDetails ? (
-                        <button className="btn btn-primary" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem' }}>
+                        <button 
+                          className="btn btn-primary" 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedItem(item.key);
+                          }}
+                          style={{ padding: '0.6rem 1.5rem', fontSize: '0.95rem' }}
+                        >
                           {t('portfolio-btn-details')}
                         </button>
                       ) : (
-                        <i className="fas fa-external-link-alt" />
+                        <div className="portfolio-link" style={{ cursor: 'default' }}>
+                          <i className="fas fa-external-link-alt" />
+                        </div>
                       )}
                     </div>
                   </div>
