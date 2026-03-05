@@ -38,14 +38,6 @@ export function PortfolioModal({ itemKey, onClose }: { itemKey: string; onClose:
           <div className="modal-body">
             <div className="modal-text" dangerouslySetInnerHTML={{ __html: contentHtml }} />
           </div>
-          {item.docUrl && (
-            <div className="modal-footer">
-              <a href={item.docUrl} download className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', zIndex: 10 }}>
-                <i className="fas fa-file-download" />
-                <span>{t('portfolio-btn-download')}</span>
-              </a>
-            </div>
-          )}
         </div>
       </div>
     </div>,

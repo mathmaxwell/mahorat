@@ -13,8 +13,8 @@ export const portfolioItems = [
   { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UgsgT4L5MWSvaUtqifKzr8B88GzZNQ.png', key: '3' },
   { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VTWggu6hLOor34aSErXiEBtT2dt3Kx.png', key: '4' },
   { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-S0qKHo8HUJ29PyWW9wftObZZF9GAwC.png', key: '5' },
-  { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bXjPq4qG4jVi8Fsjqv1gU4XfOXxmDX.png', key: '6', hasDetails: true, docUrl: '/files/oferta.docx' },
-  { img: 'https://www.aiu.edu/wp-content/uploads/2025/08/importance-of-AI-in-education.jpg', key: '7' },
+  { img: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bXjPq4qG4jVi8Fsjqv1gU4XfOXxmDX.png', key: '6' },
+  { img: 'https://www.aiu.edu/wp-content/uploads/2025/08/importance-of-AI-in-education.jpg', key: '7', hasDetails: true },
 ];
 
 export const stats = [
